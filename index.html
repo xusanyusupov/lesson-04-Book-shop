@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body id="blackMode">
+    <!-- dark  -->
+    <header class="py-1">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between ">
+                <a href="#" class="flex items-center gap-2">
+                    <div class="flex items-center gap-5">
+                        <img class="w-[55px]" src="./img/logo.png" alt="">
+                        <span class="font font-semibold text-[#706D6D] ">BOOKSHOP</span>
+                    </div>
+                </a>
+                <button id="toggleButton" class="hidden sm:block md:block fixed top-0 right-10 text-2xl p-2 lg:hidden">
+                    <i id="toggleIcon" class="fa-solid fa-bars text-[#706D6D]"></i>
+                </button>
+                <!-- dark  -->
+                <ul id="navbar" class="ulbar flex flex-col gap-12 xs:fixed sm:fixed md:fixed top-0 left-[-450px] w-[300px] h-full justify-center items-center z-50 bg-[#FD8469] lg:bg-transparent lg:static whitespace-nowrap flex-1 lg:flex-row  xl:flex-row transition-all duration-300">
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Home</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Magazines</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">All Books</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Audio Books</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Pdf Books</a></li>
+                </ul>
+                <!-- dark  -->
+                <div class="fixed-css flex gap-12 z-50 bg-white text-xl text-[#706D6D] items-center w-full justify-between px-20 py-5 border border-t-[#706D6D]  sm:fixed sm:bottom-0 sm:right-0 md:fixed md:bottom-0 md:right-0 lg:fixed lg:bottom-0 lg:right-0  xl:static xl:w-auto xl:border-none xl:bg-transparent">
+                    <i class="fa-solid fa-cart-shopping hover:text-black duration-300 cursor-pointer"></i>
+                    <i class="fa-solid fa-heart hover:text-black duration-300 cursor-pointer"></i>
+                    <i class="fa-solid fa-user hover:text-black duration-300 cursor-pointer"></i>
+                    <i id="black" class="fa-solid fa-moon hover:text-black duration-300 cursor-pointer"></i>
+                    <!-- <i class="fa-solid fa-sun hover:text-black duration-300 cursor-pointer"></i> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper lg:w-full">
+                  <div class="swiper-slide"><img class="lg:w-full" src="./img/homeBackground.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/homeBackground2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/homeBackground.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/homeBackground2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+              </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
