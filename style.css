@@ -11,8 +11,22 @@
       padding-right: 1rem;
     }
   }
+.dark{
+  background: #000000;
+}
+.containerGrid{
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
-  
+#book__card::-webkit-scrollbar{
+  display: none;
+}
+
+#card:hover #icon{
+  opacity: 1;
+}
+
 .font{
     font-family: "Montserrat", sans-serif;
 }

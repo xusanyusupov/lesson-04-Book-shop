@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode : 'class',
+  darkMode: 'Class',
   theme: {
     screens: {
       'xs': '480px',
@@ -9,5 +9,6 @@ module.exports = {
       'xl': '1280px', 
       '2xl': '1536px',
     },
+    plugins:[require('tailwind-scrollbar-hide')],
   },
 }

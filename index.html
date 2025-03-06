@@ -12,40 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body id="blackMode">
+<body>
     <!-- dark  -->
-    <header class="py-1">
+    <header id="head" class="py-1 ">
         <div class="container mx-auto">
             <div class="flex items-center justify-between ">
                 <a href="#" class="flex items-center gap-2">
                     <div class="flex items-center gap-5">
                         <img class="w-[55px]" src="./img/logo.png" alt="">
-                        <span class="font font-semibold text-[#706D6D] ">BOOKSHOP</span>
+                        <span class="font font-semibold text-[#706D6D]">BOOKSHOP</span>
                     </div>
                 </a>
                 <button id="toggleButton" class="hidden sm:block md:block fixed top-0 right-10 text-2xl p-2 lg:hidden">
                     <i id="toggleIcon" class="fa-solid fa-bars text-[#706D6D]"></i>
                 </button>
                 <!-- dark  -->
-                <ul id="navbar" class="ulbar flex flex-col gap-12 xs:fixed sm:fixed md:fixed top-0 left-[-450px] w-[300px] h-full justify-center items-center z-50 bg-[#FD8469] lg:bg-transparent lg:static whitespace-nowrap flex-1 lg:flex-row  xl:flex-row transition-all duration-300">
-                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Home</a></li>
-                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Magazines</a></li>
-                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">All Books</a></li>
-                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Audio Books</a></li>
-                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-black duration-400">Pdf Books</a></li>
+                <ul id="navbar" class="ulbar flex flex-col gap-12 xs:fixed sm:fixed md:fixed top-0 left-[-450px] w-[300px] h-full justify-center items-center z-50 bg-[#000] lg:bg-transparent lg:static whitespace-nowrap flex-1 lg:flex-row  xl:flex-row transition-all duration-300">
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">Home</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">Magazines</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">All Books</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">Audio Books</a></li>
+                    <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">Pdf Books</a></li>
                 </ul>
                 <!-- dark  -->
                 <div class="fixed-css flex gap-12 z-50 bg-white text-xl text-[#706D6D] items-center w-full justify-between px-20 py-5 border border-t-[#706D6D]  sm:fixed sm:bottom-0 sm:right-0 md:fixed md:bottom-0 md:right-0 lg:fixed lg:bottom-0 lg:right-0  xl:static xl:w-auto xl:border-none xl:bg-transparent">
-                    <i class="fa-solid fa-cart-shopping hover:text-black duration-300 cursor-pointer"></i>
-                    <i class="fa-solid fa-heart hover:text-black duration-300 cursor-pointer"></i>
-                    <i class="fa-solid fa-user hover:text-black duration-300 cursor-pointer"></i>
-                    <i id="black" class="fa-solid fa-moon hover:text-black duration-300 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping hover:text-yellow-600 duration-300 cursor-pointer"></i>
+                    <i class="fa-solid fa-heart hover:text-yellow-600 duration-300 cursor-pointer"></i>
+                    <i class="fa-solid fa-user hover:text-yellow-600 duration-300 cursor-pointer"></i>
+                    <i id="black" class="fa-solid fa-moon hover:text-yellow-600 duration-300 cursor-pointer"></i>
                     <!-- <i class="fa-solid fa-sun hover:text-black duration-300 cursor-pointer"></i> -->
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <!-- swiper  -->
+        <section>
         <div class="hero">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper lg:w-full">
@@ -65,8 +67,127 @@
                 </div>
               </div>
         </div>
+        </section>
+        <!-- swiper  -->
 
+        <section>
+            <div class="containerGrid">
+                <div class="grid grid-cols-4">
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500">
+                        <b class="text-xl">Quick Delivery</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 border-x border-[#00000017]">
+                        <b class="text-xl">Pay with Easy</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 border-x border-[#00000017]">
+                        <b class="text-xl">Best Deal</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500">
+                        <b class="text-xl">Secured Payment</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex gap-5  pt-5 border border-t">
+            <div class="w-1/4 shadow-md border border-warm-gray-400 ">
+                <div class="py-6 px-10 rounded-lg h-full">
+                    <h1 class="text-2xl font-bold mb-4">Categories</h1>
+                    <ul class="space-y-2 text-[#706D6D]">
+                        <li class="flex items-center">
+                            <input type="checkbox" id="modern" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="modern" class="ml-2">Modern</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="biography" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="biography" class="ml-2">Biography</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="classics" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="classics" class="ml-2">Classics</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="cookbooks" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="cookbooks" class="ml-2">Cookbooks</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="detective" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="detective" class="ml-2">Detective</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="fantasy" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="fantasy" class="ml-2">Fantasy</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="fairy-tale" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="fairy-tale" class="ml-2">Fairy tale</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="fiction" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="fiction" class="ml-2">Fiction</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="horror" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="horror" class="ml-2">Horror</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="historical-fiction" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="historical-fiction" class="ml-2">Historical fiction</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="history" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="history" class="ml-2">History</label>
+                        </li>
+                        <li class="flex items-center">
+                            <input type="checkbox" id="romance" class="form-checkbox h-5 w-5 text-blue-600">
+                            <label for="romance" class="ml-2">Romance</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="book__card" class="w-3/4 h-[1050px] overflow-y-scroll border p-3  grid grid-cols-4 gap-6 lg:grid-cols-4 md:grid-cols-1">
+                
+            </div>  
+        </section>
     </main>
+
+    <footer class="bg-[#1A1A1A] p-10">
+        <div class="containerGrid grid grid-cols-4 gap-10">
+            <div class="flex flex-col gap-3">
+                <span class="font font-semibold text-white text-xl">BOOKSHOP</span>
+                <span class="text-[#706D6D] text-lg">Eng yaxshi kitoblarni bizdan toping! Turli janrdagi kitoblar, tez yetkazib berish va qulay to'lov</span>
+            </div>
+            <div class="flex flex-col gap-3">
+                <span class="font font-semibold text-white text-xl">Tezkor Havolalar</span>
+                <a class="text-[#706D6D] text-lg" href="index.html">Bosh sahifa</a>
+                <a class="text-[#706D6D] text-lg" href="index.html">Magazinlar</a>
+                <a class="text-[#706D6D] text-lg" href="index.html">Kitoblar</a>
+                <a class="text-[#706D6D] text-lg" href="index.html">Audio kitoblar</a>
+                <a class="text-[#706D6D] text-lg" href="index.html">Bog'lanish</a>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+                <span class="font font-semibold text-white text-xl">Bizni kuzating</span>
+                <div class="flex items-center gap-5">
+                    <a href="#" class="text-xl text-[#706D6D]"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-xl text-[#706D6D]"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-xl text-[#706D6D]"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-xl text-[#706D6D]"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+                <span class="font font-semibold text-white text-xl">Yangiliklarga obuna bo'ling</span>
+                <div class="w-56 flex flex-col items-center gap-3">
+                    <input class="w-full p-2 rounded-lg" type="text" placeholder="Emailinggizni kiriting">
+                    <button class="w-full bg-yellow-600 text-white p-2 rounded-lg">Obuna bo'lish</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
