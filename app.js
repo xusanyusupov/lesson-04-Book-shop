@@ -66,16 +66,16 @@ fetch(mainURL)
   .then(data => {
     data.data.map(a => {
       book__card.innerHTML += `
-      <div id="card" class="border flex flex-col h-full">
-      <div class="w-full h-80">
+      <div id="card" class="border flex flex-col h-full pb-5">
+      <div class="w-full h-72">
         <img class="w-full h-full object-cover" src="${a.image}" alt="Book">
       </div>
       <div class="px-5 pb-5 flex flex-col flex-grow text-[#706D6D]">
         <p>${a.genre}</p>
         <b>${a.title}</b>
-        <p>${a.author}</p>
-        <p class="flex-grow">${a.description}</p> 
-        <div id="icon" class="flex items-center justify-between mt-auto opacity-0 ">
+        <p><b>Author: </b>${a.author}</p>
+        <p class="flex-grow"><b>Desc:</b> ${a.description}</p> 
+        <div id="icon" class="flex items-center justify-between mt-auto opacity-0 pt-2">
           <button class="bg-blue-500 text-white py-2 px-3 rounded-2xl hover:bg-blue-800">Add to cart</button>
           <div class="flex gap-5">
           <button class="text-2xl"><i class="fa-regular fa-heart"></i></button>

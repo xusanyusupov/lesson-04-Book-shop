@@ -23,11 +23,11 @@
                         <span class="font font-semibold text-[#706D6D]">BOOKSHOP</span>
                     </div>
                 </a>
-                <button id="toggleButton" class="hidden sm:block md:block fixed top-0 right-10 text-2xl p-2 lg:hidden">
+                <button id="toggleButton" class="hidden sm:block md:block fixed top-2 right-10 text-2xl p-2 lg:hidden">
                     <i id="toggleIcon" class="fa-solid fa-bars text-[#706D6D]"></i>
                 </button>
                 <!-- dark  -->
-                <ul id="navbar" class="ulbar flex flex-col gap-12 xs:fixed sm:fixed md:fixed top-0 left-[-450px] w-[300px] h-full justify-center items-center z-50 bg-[#000] lg:bg-transparent lg:static whitespace-nowrap flex-1 lg:flex-row  xl:flex-row transition-all duration-300">
+                <ul id="navbar" class="ulbar flex flex-col gap-12 xs:fixed sm:fixed md:fixed top-0 left-[-450px] w-[300px] h-full justify-center items-center z-[555] bg-[#000] lg:bg-transparent lg:static whitespace-nowrap flex-1 lg:flex-row  xl:flex-row transition-all duration-300">
                     <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">Home</a></li>
                     <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">Magazines</a></li>
                     <li><a href="#" class="text-base font font-semibold text-[#706D6D] hover:text-yellow-600 duration-400">All Books</a></li>
@@ -40,21 +40,26 @@
                     <i class="fa-solid fa-heart hover:text-yellow-600 duration-300 cursor-pointer"></i>
                     <i class="fa-solid fa-user hover:text-yellow-600 duration-300 cursor-pointer"></i>
                     <i id="black" class="fa-solid fa-moon hover:text-yellow-600 duration-300 cursor-pointer"></i>
+                    <a href="./pages/login.html"><i title="Login in" class="fa-solid fa-right-to-bracket hover:text-yellow-600 duration-300 cursor-pointer"></i></a>
                     <!-- <i class="fa-solid fa-sun hover:text-black duration-300 cursor-pointer"></i> -->
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <!-- swiper  -->
+
+
+
+
+
         <section>
         <div class="hero">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper lg:w-full">
-                  <div class="swiper-slide"><img class="lg:w-full" src="./img/homeBackground.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/homeBackground2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/homeBackground.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/homeBackground2.jpg" alt=""></div>
+            <div class="swiper mySwiper sm:w-full">
+                <div class="swiper-wrapper sm:w-full lg:w-full">
+                  <div class="swiper-slide"><img id="swiperImg" class="lg:w-full" src="./img/homeBackground.jpg" alt=""></div>
+                  <div class="swiper-slide"><img id="swiperImg" class="lg:w-full" src="./img/homeBackground2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img id="swiperImg" class="lg:w-full" src="./img/homeBackground.jpg" alt=""></div>
+                  <div class="swiper-slide"><img id="swiperImg" class="lg:w-full" src="./img/homeBackground2.jpg" alt=""></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -71,21 +76,21 @@
         <!-- swiper  -->
 
         <section>
-            <div class="containerGrid">
-                <div class="grid grid-cols-4">
-                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500">
+            <div  class="containerGrid">
+                <div id="containerDesc" class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xl:grid-cols-4">
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 text-center">
                         <b class="text-xl">Quick Delivery</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
                     </div>
-                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 border-x border-[#00000017]">
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 border-x border-[#00000017] text-center">
                         <b class="text-xl">Pay with Easy</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
                     </div>
-                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 border-x border-[#00000017]">
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 border-x border-[#00000017] text-center">
                         <b class="text-xl">Best Deal</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
                     </div>
-                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500">
+                    <div class="flex flex-col gap-2 items-center px-6 py-10 text-blue-500 text-center">
                         <b class="text-xl">Secured Payment</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus.</p>
                     </div>
@@ -93,11 +98,11 @@
             </div>
         </section>
 
-        <section class="flex gap-5  pt-5 border border-t">
-            <div class="w-1/4 shadow-md border border-warm-gray-400 ">
+        <section id="main__content" class="flex gap-5  pt-5 border border-t sm:flex-col md:flex-row">
+            <div id="title__Category" class="w-1/4 shadow-md border border-warm-gray-400 md:w-[40%]  xl:w-1/4 sm:w-full sm:text-center">
                 <div class="py-6 px-10 rounded-lg h-full">
                     <h1 class="text-2xl font-bold mb-4">Categories</h1>
-                    <ul class="space-y-2 text-[#706D6D]">
+                    <ul id="category" class="space-y-2 text-[#706D6D] sm:flex sm:gap-5 sm:whitespace-nowrap sm:w-full sm:overflow-x-scroll sm:pb-3 xl:flex-col xl:overflow-hidden xl:gap-3">
                         <li class="flex items-center">
                             <input type="checkbox" id="modern" class="form-checkbox h-5 w-5 text-blue-600">
                             <label for="modern" class="ml-2">Modern</label>
@@ -149,19 +154,19 @@
                     </ul>
                 </div>
             </div>
-            <div id="book__card" class="w-3/4 h-[1050px] overflow-y-scroll border p-3  grid grid-cols-4 gap-6 lg:grid-cols-4 md:grid-cols-1">
+            <div id="book__card" class="w-3/4 h-[1050px] overflow-y-scroll border p-3  grid grid-cols-4 gap-3  lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 mx-auto sm:w-full  xl:grid-cols-4 2xl:grid-cols-4">
                 
             </div>  
         </section>
     </main>
 
     <footer class="bg-[#1A1A1A] p-10">
-        <div class="containerGrid grid grid-cols-4 gap-10">
-            <div class="flex flex-col gap-3">
-                <span class="font font-semibold text-white text-xl">BOOKSHOP</span>
-                <span class="text-[#706D6D] text-lg">Eng yaxshi kitoblarni bizdan toping! Turli janrdagi kitoblar, tez yetkazib berish va qulay to'lov</span>
+        <div class="containerGrid grid grid-cols-4 gap-10 lg:grid-cols-2 items-start md:grid-cols-2 sm:grid-cols-1 sm:pb-10 xl:grid-cols-4">
+            <div id="footerTitle" class="flex flex-col gap-3">
+                <span class="font font-semibold text-white text-xl sm:text-center">BOOKSHOP</span>
+                <span class="text-[#706D6D] text-lg sm:text-center">Eng yaxshi kitoblarni bizdan toping! Turli janrdagi kitoblar, tez yetkazib berish va qulay to'lov</span>
             </div>
-            <div class="flex flex-col gap-3">
+            <div id="links" class="flex flex-col gap-3 sm:text-center">
                 <span class="font font-semibold text-white text-xl">Tezkor Havolalar</span>
                 <a class="text-[#706D6D] text-lg" href="index.html">Bosh sahifa</a>
                 <a class="text-[#706D6D] text-lg" href="index.html">Magazinlar</a>
@@ -169,7 +174,7 @@
                 <a class="text-[#706D6D] text-lg" href="index.html">Audio kitoblar</a>
                 <a class="text-[#706D6D] text-lg" href="index.html">Bog'lanish</a>
             </div>
-            <div class="flex flex-col items-center gap-3">
+            <div class="flex flex-col items-center gap-3 lg:items-center md:items-center">
                 <span class="font font-semibold text-white text-xl">Bizni kuzating</span>
                 <div class="flex items-center gap-5">
                     <a href="#" class="text-xl text-[#706D6D]"><i class="fa-brands fa-facebook"></i></a>
@@ -178,9 +183,9 @@
                     <a href="#" class="text-xl text-[#706D6D]"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="flex flex-col items-center gap-3">
+            <div id="footer__inp" class="flex flex-col items-center gap-3 lg:items-center  md:items-center">
                 <span class="font font-semibold text-white text-xl">Yangiliklarga obuna bo'ling</span>
-                <div class="w-56 flex flex-col items-center gap-3">
+                <div class="w-56 flex flex-col items-center gap-3 lg:items-start">
                     <input class="w-full p-2 rounded-lg" type="text" placeholder="Emailinggizni kiriting">
                     <button class="w-full bg-yellow-600 text-white p-2 rounded-lg">Obuna bo'lish</button>
                 </div>
